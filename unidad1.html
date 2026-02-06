@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidad 1 | Introduccion al Desarrollo Web Orientado a Servicios</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="background-layers" aria-hidden="true">
+        <span class="orb orb-one" data-parallax></span>
+        <span class="orb orb-two" data-parallax></span>
+        <span class="orb orb-three" data-parallax></span>
+    </div>
+
+    <header class="nav-blur">
+        <div class="content-wrapper flex flex-wrap items-center justify-between gap-4">
+            <a class="logo-mark" href="index.html">DWOS</a>
+            <nav class="flex flex-wrap gap-4 text-sm font-semibold text-slate-100">
+                <a href="index.html#bienvenida" class="nav-link">Inicio</a>
+                <a href="index.html#unidades" class="nav-link">Unidades</a>
+                <a href="#contenido" class="nav-link">Contenido</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="unit-hero" id="contenido">
+            <div class="unit-hero__inner">
+                <div class="unit-hero__text" data-animate>
+                    <p class="eyebrow">Unidad 1</p>
+                    <h1>Introduccion al Desarrollo Web Orientado a Servicios</h1>
+                    <p>Guia que explica los paradigmas basados en servicios, el papel de SOA y la evolucion hacia aplicaciones hibridas.</p>
+                    <div class="badge-row">
+                        <span>Paradigma SOA</span>
+                        <span>Mashups</span>
+                        <span>Servicios Cloud</span>
+                    </div>
+                    <a class="cta primary" href="index.html">Volver al portafolio</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="unit-topics">
+            <div class="topic-card" data-animate>
+                <div class="topic-icon">1</div>
+                <p class="eyebrow">Paradigma orientado a servicios</p>
+                <h3>Desarrollo de aplicaciones orientadas a servicios</h3>
+                <p>Este enfoque construye soluciones a partir de servicios independientes, reutilizables y accesibles desde la red, sin importar la plataforma o lenguaje.</p>
+                <p><strong>Servicios en la nube</strong></p>
+                <ul>
+                    <li><strong>IaaS:</strong> provee infraestructura como servidores, almacenamiento y redes (por ejemplo, maquinas virtuales).</li>
+                    <li><strong>PaaS:</strong> entrega plataformas completas para desarrollar, probar y desplegar aplicaciones.</li>
+                    <li><strong>SaaS:</strong> ofrece software listo para usarse a traves de Internet, como correo o ERPs.</li>
+                </ul>
+                <p><strong>Caracteristicas claves</strong></p>
+                <ul>
+                    <li>Desacoplamiento, reutilizacion e interoperabilidad entre servicios.</li>
+                    <li>Escalabilidad y acceso remoto mediante protocolos como HTTP.</li>
+                </ul>
+                <p><strong>Aplicaciones hibridas (Mashups)</strong></p>
+                <ul>
+                    <li>Integran APIs externas para combinar datos en una sola interfaz.</li>
+                    <li>Mejoran la experiencia del usuario unificando mapas, clima, trafico u otras fuentes.</li>
+                </ul>
+            </div>
+            <div class="topic-card" data-animate>
+                <div class="topic-icon">2</div>
+                <p class="eyebrow">Arquitectura SOA</p>
+                <h3>Definicion y principios</h3>
+                <p>SOA organiza las aplicaciones como un conjunto de servicios autonomos con interfaces bien definidas que se comunican por protocolos estandar.</p>
+                <ul>
+                    <li>Cada servicio atiende una tarea especifica y puede reutilizarse en distintos sistemas.</li>
+                    <li>Principios: bajo acoplamiento, alta cohesion, reutilizacion, autonomia, descubribilidad e interoperabilidad.</li>
+                </ul>
+            </div>
+            <div class="topic-card" data-animate>
+                <div class="topic-icon">3</div>
+                <p class="eyebrow">Est&#225;ndares relacionados</p>
+                <h3>Protocolos y contratos</h3>
+                <p>Dominios esenciales para cualquier implementacion orientada a servicios.</p>
+                <ul>
+                    <li><strong>XML:</strong> lenguaje para estructurar y transportar datos.</li>
+                    <li><strong>SOAP:</strong> protocolo basado en XML para mensajeria sobre HTTP/HTTPS.</li>
+                    <li><strong>WSDL:</strong> describe operaciones, mensajes y formatos de un servicio.</li>
+                    <li><strong>UDDI:</strong> registro para publicar y descubrir servicios disponibles.</li>
+                    <li><strong>REST:</strong> estilo arquitectonico que usa metodos HTTP como GET, POST, PUT y DELETE.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="content-wrapper highlight-grid">
+            <article class="highlight-card" data-animate>
+                <p class="eyebrow">Saber Hacer #1</p>
+                <h3>Envio de correos y suscripciones</h3>
+                <p>Actividad guiada para practicar comunicacion y captacion de usuarios.</p>
+                <ul>
+                    <li>Disenar flujo de envio de correos desde la aplicacion.</li>
+                    <li>Configurar mecanismo de suscripcion siguiendo las indicaciones del profesor.</li>
+                </ul>
+                <div class="saber-placeholder">Espacio reservado para evidencias y capturas del saber hacer.</div>
+            </article>
+            <article class="highlight-card" data-animate>
+                <p class="eyebrow">Saber Hacer #2</p>
+                <h3>Actividad en desarrollo</h3>
+                <p>Se documentar&#225; la segunda practica cuando el profesor lo indique.</p>
+                <div class="saber-placeholder">Espacio abierto para futuros entregables y notas.</div>
+            </article>
+        </section>
+
+        <section class="content-wrapper contact-wrap">
+            <div class="section-heading" data-animate>
+                <p class="eyebrow">Conclusiones</p>
+                <h2>Insight de la unidad</h2>
+                <p>Esta fase establece el vocabulario compartido, define est&#225;ndares y prepara la base para los siguientes despliegues.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-card" data-animate>
+                    <p class="eyebrow">Siguiente paso</p>
+                    <h3>Implementacion de API</h3>
+                    <p>Preparar colecciones en Postman y definir contratos OpenAPI v3.</p>
+                </div>
+                <div class="contact-card" data-animate>
+                    <p class="eyebrow">Contacto</p>
+                    <h3>Joseph Asiel</h3>
+                    <a href="mailto:asielpro3@gmail.com">asielpro3@gmail.com</a>
+                </div>
+                <div class="contact-card" data-animate>
+                    <p class="eyebrow">Contacto</p>
+                    <h3>Berakhah Efratah</h3>
+                    <a href="mailto:beralara74@gmail.com">beralara74@gmail.com</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="content-wrapper">
+            <p>&copy; <span data-current-year></span> Joseph Asiel Garcia Guerrero &amp; Berakhah Efratah Lara Perez.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

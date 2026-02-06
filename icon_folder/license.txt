@@ -1,0 +1,11 @@
+Model Information:
+* title:	Icon Folder
+* source:	https://sketchfab.com/3d-models/icon-folder-a3ada26dc877486db8acf03472aa17f8
+* author:	Des'Lee (https://sketchfab.com/dexilee)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Icon Folder" (https://sketchfab.com/3d-models/icon-folder-a3ada26dc877486db8acf03472aa17f8) by Des'Lee (https://sketchfab.com/dexilee) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
