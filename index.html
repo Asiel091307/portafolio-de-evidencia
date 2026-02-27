@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de evidencias | Joseph y Berakhah</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+</head>
+<body>
+    <div id="intro-overlay" class="intro-screen" aria-live="polite">
+        <div class="intro-content">
+            <p class="intro-label">Secuencia inicial</p>
+            <div id="intro-text" class="intro-text"></div>
+            <div class="intro-progress"><span></span></div>
+        </div>
+    </div>
+
+    <header class="top-nav">
+        <div class="pill-nav-container">
+            <nav class="pill-nav" aria-label="Primary navigation">
+                <a href="#inicio" class="pill-logo" data-nav-link aria-label="Inicio">
+                    <span>DWOS</span>
+                </a>
+
+                <div class="pill-nav-items desktop-only">
+                    <ul class="pill-list" role="list">
+                        <li>
+                            <a href="#inicio" class="pill-link" data-nav-link>
+                                <span class="label-stack">
+                                    <span class="pill-label">Inicio</span>
+                                    <span class="pill-label-hover" aria-hidden="true">Inicio</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#unidades" class="pill-link" data-nav-link>
+                                <span class="label-stack">
+                                    <span class="pill-label">Unidades</span>
+                                    <span class="pill-label-hover" aria-hidden="true">Unidades</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#evidencias" class="pill-link" data-nav-link>
+                                <span class="label-stack">
+                                    <span class="pill-label">Evidencias</span>
+                                    <span class="pill-label-hover" aria-hidden="true">Evidencias</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contacto" class="pill-link" data-nav-link>
+                                <span class="label-stack">
+                                    <span class="pill-label">Contacto</span>
+                                    <span class="pill-label-hover" aria-hidden="true">Contacto</span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <button
+                    class="mobile-menu-button mobile-only"
+                    id="mobile-menu-button"
+                    aria-label="Abrir menu"
+                    aria-expanded="false"
+                    aria-controls="mobile-menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </nav>
+
+            <div class="mobile-menu-popover mobile-only" id="mobile-menu" hidden>
+                <ul class="mobile-menu-list">
+                    <li><a href="#inicio" class="mobile-menu-link" data-nav-link>Inicio</a></li>
+                    <li><a href="#unidades" class="mobile-menu-link" data-nav-link>Unidades</a></li>
+                    <li><a href="#evidencias" class="mobile-menu-link" data-nav-link>Evidencias</a></li>
+                    <li><a href="#contacto" class="mobile-menu-link" data-nav-link>Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero section-inicio section-panel is-active">
+            <div class="hero-wrapper">
+                <div class="hero-copy" data-animate>
+                    <p class="eyebrow">Hola, somos Joseph y Berakhah</p>
+                    <h1>Equipo enfocado en los servicios web y manejo de APIs.</h1>
+                    <p class="hero-lead">Dise&#241;amos, documentamos y desplegamos evidencias para la materia de Desarrollo Web Orientado a Servicios. Somos estudiantes de TSU en la UTC, grupo 5DSMA.</p>
+                    <div class="hero-pills">
+                        <span>Documentamos despliegues reales</span>
+                        <span>Consumimos y construimos APIs</span>
+                        <span>Mostramos evidencias del grupo 5DSMA</span>
+                    </div>
+                </div>
+                <div class="hero-visual" data-animate>
+                    <div class="frame-image">
+                        <div class="floating-card hero-hint" aria-live="polite">
+                            <p>Seccion equipo</p>
+                            <strong>Haz clic en el modelo 3D</strong>
+                            <span>Ahi se abre el perfil del equipo.</span>
+                        </div>
+                        <div class="sunset">
+                            <a class="hero-model-link" href="#equipo" aria-label="Ir a la sección del equipo">
+                                <model-viewer
+                                    class="hero-model"
+                                    src="icon_folder/scene.gltf"
+                                    ar
+                                    auto-rotate
+                                    auto-rotate-speed="90"
+                                    shadow-intensity="0.8"
+                                    exposure="0.9"
+                                    interaction-policy="none"
+                                    interaction-prompt="none"
+                                    alt="Modelo 3D para la portada del portafolio">
+                                </model-viewer>
+                            </a>
+                        </div>
+                        <div class="floating-card">
+                            <p class="eyebrow">Equipo destacado</p>
+                            <strong>Haz clic en la carpeta dorada</strong>
+                            <span>&rarr; Ah&iacute; se abre nuestro perfil de equipo.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="equipo" class="section section-equipo section-panel">
+            <div class="section-heading" data-animate>
+                <p class="eyebrow">Nuestro equipo</p>
+                <h2>Talento combinado</h2>
+                <p>Dos perfiles complementarios que se encargan de la narrativa visual y la integracion tecnica. Estudiantes de TSU en la UTC, grupo 5DSMA.</p>
+            </div>
+            <div class="team-grid">
+                <article class="team-card" data-animate>
+                    <h3
+                        class="team-name"
+                        style="--name-color:#A56300;"
+                        data-decrypt-text="Joseph Asiel Garcia Guerrero"
+                        data-animate-on="view"
+                        data-sequential="true"
+                        data-reveal-direction="center"
+                        data-speed="48"
+                        data-use-original-chars-only="false">Joseph Asiel Garcia Guerrero</h3>
+                    <p class="role">Estudiante de 5&#186; cuatrimestre &middot; c&eacute;dula</p>
+                    <p>S&eacute; hacer aplicaciones web, APIs, bases de datos y mucho m&aacute;s.</p>
+                    <a href="mailto:asielpro3@gmail.com">asielpro3@gmail.com</a>
+                </article>
+                <article class="team-card" data-animate>
+                    <h3
+                        class="team-name"
+                        style="--name-color:#2B5CA8;"
+                        data-decrypt-text="Berakhah Efratah Lara Perez"
+                        data-animate-on="view"
+                        data-sequential="true"
+                        data-reveal-direction="center"
+                        data-speed="48"
+                        data-use-original-chars-only="false">Berakhah Efratah Lara Perez</h3>
+                    <p class="role">Integracion de servicios &#183; Observabilidad</p>
+                    <p>Orquesto despliegues, automatizo pipelines y documento la salud de nuestros servicios con paneles claros.</p>
+                    <a href="mailto:beralara74@gmail.com">beralara74@gmail.com</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="unidades" class="section section-unidades section-panel">
+            <div class="section-heading" data-animate>
+                <p class="eyebrow">Ruta del curso</p>
+                <h2>Unidades del portafolio</h2>
+            </div>
+            <div class="unit-list">
+                <a class="unit-folder-link" href="unidad1.html" data-animate>
+                    <div class="folder" style="--folder-color:#F1BC52;--folder-back-color:#DBA23A;">
+                        <div class="folder__back">
+                            <div class="paper"></div>
+                            <div class="paper"></div>
+                            <div class="paper"></div>
+                            <div class="folder__front"></div>
+                            <div class="folder__front right"></div>
+                        </div>
+                    </div>
+                    <div class="unit-folder-meta">
+                        <h3>Unidad 1</h3>
+                        <p>Introduccion al desarrollo web orientado a servicios, paradigmas y estandares SOA.</p>
+                    </div>
+                </a>
+
+                <a class="unit-folder-link" href="unidad2.html" data-animate>
+                    <div class="folder" style="--folder-color:#8CB8FF;--folder-back-color:#5A90F0;">
+                        <div class="folder__back">
+                            <div class="paper"></div>
+                            <div class="paper"></div>
+                            <div class="paper"></div>
+                            <div class="folder__front"></div>
+                            <div class="folder__front right"></div>
+                        </div>
+                    </div>
+                    <div class="unit-folder-meta">
+                        <h3>Unidad 2</h3>
+                        <p>Implementacion de API con autenticacion y monitoreo.</p>
+                    </div>
+                </a>
+
+                <a class="unit-folder-link" href="unidad3.html" data-animate>
+                    <div class="folder" style="--folder-color:#95D8A7;--folder-back-color:#69B97E;">
+                        <div class="folder__back">
+                            <div class="paper"></div>
+                            <div class="paper"></div>
+                            <div class="paper"></div>
+                            <div class="folder__front"></div>
+                            <div class="folder__front right"></div>
+                        </div>
+                    </div>
+                    <div class="unit-folder-meta">
+                        <h3>Unidad 3</h3>
+                        <p>Desarrollo completo de API y versionamiento.</p>
+                    </div>
+                </a>
+
+                <a class="unit-folder-link" href="#contacto" data-animate>
+                    <div class="folder" style="--folder-color:#F3C7B2;--folder-back-color:#DDAD96;">
+                        <div class="folder__back">
+                            <div class="paper"></div>
+                            <div class="paper"></div>
+                            <div class="paper"></div>
+                            <div class="folder__front"></div>
+                            <div class="folder__front right"></div>
+                        </div>
+                    </div>
+                    <div class="unit-folder-meta">
+                        <h3>Unidad 4</h3>
+                        <p>Implementacion y despliegue continuo (plan de entrega).</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section id="evidencias" class="section section-evidencias section-panel">
+            <div class="section-heading" data-animate>
+                <p class="eyebrow">Evidencias destacadas</p>
+                <h2>Procesos que documentamos</h2>
+            </div>
+            <div class="showcase-grid">
+                <article data-animate>
+                    <h3>Storyboard de servicios</h3>
+                    <p>Diagramas con flujos asicronos, payloads y contratos JSON.</p>
+                </article>
+                <article data-animate>
+                    <h3>Laboratorio de pruebas</h3>
+                    <p>Runs de Postman y reportes de latencia exportados a dashboards.</p>
+                </article>
+                <article data-animate>
+                    <h3>Kit de despliegue</h3>
+                    <p>Checklist con pasos de versionado y pipelines automatizados.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contacto" class="section section-contacto section-panel">
+            <div class="section-heading" data-animate>
+                <p class="eyebrow">Contacto</p>
+                <h2>&#191;Listo para revisar el portafolio?</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-card" data-animate>
+                    <p>Joseph Asiel</p>
+                    <a href="mailto:asielpro3@gmail.com">asielpro3@gmail.com</a>
+                </div>
+                <div class="contact-card" data-animate>
+                    <p>Berakhah Efratah</p>
+                    <a href="mailto:beralara74@gmail.com">beralara74@gmail.com</a>
+                </div>
+                <div class="contact-card" data-animate>
+                    <p>Repositorio local</p>
+                    <span>c:/xampp/htdocs/portafolio_de_evidencias</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span data-current-year></span> Portafolio de evidencias.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/pill-nav.js"></script>
+    <script src="js/section-switcher.js"></script>
+    <script src="js/decrypted-text.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidad 3 | Frameworks para el desarrollo de APIs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="background-layers" aria-hidden="true">
+        <span class="orb orb-one" data-parallax></span>
+        <span class="orb orb-two" data-parallax></span>
+        <span class="orb orb-three" data-parallax></span>
+    </div>
+
+    <header class="nav-blur">
+        <div class="content-wrapper flex flex-wrap items-center justify-between gap-4">
+            <a class="logo-mark" href="index.html">DWOS</a>
+            <nav class="flex flex-wrap gap-4 text-sm font-semibold text-slate-100">
+                <a href="index.html#inicio" class="nav-link">Inicio</a>
+                <a href="index.html#unidades" class="nav-link">Unidades</a>
+                <a href="#contenido" class="nav-link">Contenido</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="unit-hero" id="contenido">
+            <div class="unit-hero__inner">
+                <div class="unit-hero__text" data-animate>
+                    <p class="eyebrow">Unidad 3</p>
+                    <h1>Frameworks para el desarrollo de APIs</h1>
+                    <p>Aplicaciones orientadas a servicios para construir APIs REST y GraphQL de forma rapida, ordenada y escalable.</p>
+                    <div class="badge-row">
+                        <span>REST</span>
+                        <span>GraphQL</span>
+                        <span>JWT</span>
+                        <span>Swagger</span>
+                    </div>
+                    <a class="cta primary" href="index.html">Volver al portafolio</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="unit-topics">
+            <div class="topic-card" data-animate>
+                <div class="topic-icon">1</div>
+                <p class="eyebrow">Definicion</p>
+                <h3>&iquest;Que es un framework para APIs?</h3>
+                <p>Un framework es un conjunto de herramientas y reglas que facilita crear servicios y APIs (por ejemplo, REST o GraphQL) de forma rapida y ordenada.</p>
+                <p><strong>&iquest;Para que se usan en APIs?</strong></p>
+                <ul>
+                    <li>Definir rutas/endpoints y controladores.</li>
+                    <li>Validar datos y manejar errores.</li>
+                    <li>Conectar con base de datos (ORM).</li>
+                    <li>Implementar seguridad (JWT, roles/permisos).</li>
+                    <li>Documentar y probar la API (Swagger/Postman).</li>
+                </ul>
+            </div>
+
+            <div class="topic-card" data-animate>
+                <div class="topic-icon">2</div>
+                <p class="eyebrow">Frameworks comunes</p>
+                <h3>Opciones populares por ecosistema</h3>
+                <ul>
+                    <li><strong>ASP.NET Core Web API</strong> (.NET)</li>
+                    <li><strong>Spring Boot</strong> (Java)</li>
+                    <li><strong>Express / NestJS</strong> (Node.js)</li>
+                    <li><strong>FastAPI / Django REST</strong> (Python)</li>
+                    <li><strong>Laravel</strong> (PHP)</li>
+                </ul>
+            </div>
+
+            <div class="topic-card" data-animate>
+                <div class="topic-icon">3</div>
+                <p class="eyebrow">Proceso de desarrollo</p>
+                <h3>Etapas para construir una API</h3>
+                <ol>
+                    <li><strong>Requerimientos:</strong> que datos y operaciones necesita el sistema (usuarios, eventos, etc.).</li>
+                    <li><strong>Diseno:</strong> definir endpoints, metodos HTTP (GET/POST/PUT/DELETE), formato JSON y codigos de respuesta.</li>
+                    <li><strong>Modelado de datos:</strong> entidades/tablas y reglas de negocio.</li>
+                    <li><strong>Implementacion:</strong> controladores/servicios, validaciones y respuestas consistentes.</li>
+                    <li><strong>Seguridad:</strong> autenticacion (JWT) y autorizacion (roles).</li>
+                    <li><strong>Pruebas:</strong> Postman/Swagger + pruebas unitarias/integracion.</li>
+                    <li><strong>Documentacion:</strong> Swagger/OpenAPI con ejemplos de request/response.</li>
+                    <li><strong>Despliegue y mantenimiento:</strong> servidor, variables de entorno, versionado (/v1, /v2) y mejoras.</li>
+                </ol>
+            </div>
+
+            <div class="topic-card" data-animate>
+                <div class="topic-icon">4</div>
+                <p class="eyebrow">Mini ejemplo REST</p>
+                <h3>Endpoints para modulo de empleados</h3>
+                <ul>
+                    <li><code>GET /api/empleados</code> (listar)</li>
+                    <li><code>GET /api/empleados/{id}</code> (detalle)</li>
+                    <li><code>POST /api/empleados</code> (crear)</li>
+                    <li><code>PUT /api/empleados/{id}</code> (editar)</li>
+                    <li><code>DELETE /api/empleados/{id}</code> (eliminar)</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="content-wrapper">
+            <p>&copy; <span data-current-year></span> Joseph Asiel Garcia Guerrero &amp; Berakhah Efratah Lara Perez.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
